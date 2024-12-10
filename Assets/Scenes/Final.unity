@@ -1361,7 +1361,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5679540189359919502, guid: 1ff42ad2f79998243be7f29d82e85c99, type: 3}
       propertyPath: m_Name
-      value: hex_ring_model 1 (2)
+      value: hex_ring_slow
       objectReference: {fileID: 0}
     - target: {fileID: 6183789483955449947, guid: 1ff42ad2f79998243be7f29d82e85c99, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4200,7 +4200,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2459335898432271787, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
       propertyPath: m_Name
-      value: sphere_container_model (1)
+      value: sphere_container_left
       objectReference: {fileID: 0}
     - target: {fileID: 2984338804235284241, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5443,7 +5443,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.99
+      value: 23.89
       objectReference: {fileID: 0}
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6219,9 +6219,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 438746141705949056, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
+      propertyPath: speed
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 438746141705949056, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
+      propertyPath: yVariance
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 2459335898432271787, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
       propertyPath: m_Name
-      value: sphere_container_model
+      value: sphere_container_right
       objectReference: {fileID: 0}
     - target: {fileID: 2984338804235284241, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6229,7 +6237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2984338804235284241, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.01
+      value: 6.64
       objectReference: {fileID: 0}
     - target: {fileID: 2984338804235284241, guid: 0969dedb3f7cc9341a2afdad3e649910, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6663,7 +6671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5679540189359919502, guid: 1ff42ad2f79998243be7f29d82e85c99, type: 3}
       propertyPath: m_Name
-      value: hex_ring_model 1 (1)
+      value: hex_ring_fast
       objectReference: {fileID: 0}
     - target: {fileID: 6487388990503091975, guid: 1ff42ad2f79998243be7f29d82e85c99, type: 3}
       propertyPath: maxSpeed
@@ -6671,11 +6679,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6487388990503091975, guid: 1ff42ad2f79998243be7f29d82e85c99, type: 3}
       propertyPath: rampDuration
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6487388990503091975, guid: 1ff42ad2f79998243be7f29d82e85c99, type: 3}
       propertyPath: reverseDelay
-      value: 0.3
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6697,8 +6705,8 @@ SceneRoots:
   - {fileID: 6859998608129606999}
   - {fileID: 707992639}
   - {fileID: 8316148085917668112}
-  - {fileID: 2851459138656612507}
   - {fileID: 1528218834}
+  - {fileID: 2851459138656612507}
   - {fileID: 382895436}
   - {fileID: 495256117}
   - {fileID: 1353379812}
