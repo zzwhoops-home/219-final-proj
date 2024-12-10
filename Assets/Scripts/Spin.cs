@@ -5,7 +5,13 @@ using UnityEngine;
 public class Spin : MonoBehaviour
 {
     [SerializeField]
-    private float spinSpeed;
+    private float maxSpeed;
+
+    [SerializeField]
+    private float rampDuration, reverseDelay;
+
+    private float curSpeed, timeElapsed;
+    private int direction;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +22,10 @@ public class Spin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Quaternion rotation = Quaternion.Euler(spinSpeed * Time.deltaTime, 0f, 0f);
-        transform.rotation *= rotation;
+        // add time
+        timeElapsed += Time.deltaTime;
+
+        float angle = curSpeed * timeElapsed * Time.deltaTime;
+        transform.rotation *= Quaternion.AngleAxis(angle, Vector3.forward);
     }
 }
